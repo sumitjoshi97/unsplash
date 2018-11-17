@@ -1,6 +1,6 @@
 import { IMAGES } from '../constants'
 
-const loadingReducer = (state = [], action) => {
+const loadingReducer = (state = false, action) => {
   switch (action.type) {
     case IMAGES.LOAD:
       return true
