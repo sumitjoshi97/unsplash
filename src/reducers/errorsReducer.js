@@ -1,6 +1,6 @@
 import { IMAGES } from '../constants'
 
-const errorReducer = (state = [], action) => {
+const errorReducer = (state = null, action) => {
   switch (action.type) {
     case IMAGES.LOAD_FAIL:
       return action.error
